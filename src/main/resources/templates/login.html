@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+
+<form method="post" th:action="@{/login-handle}">
+    <h2 class="form-signin-heading">Vui lòng đăng nhập</h2>
+
+        <label for="username" class="sr-only">Tên tài khoản</label>
+        <input type="text" id="username" name="name"  placeholder="Tên tài khoản"  >
+
+        <label for="password" class="sr-only">Mật khẩu</label>
+        <input type="password" id="password" name="pass" class="form-control" placeholder="Password" required="">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Đăng nhập</button>
+</form>
+
+</body>
+</html>
